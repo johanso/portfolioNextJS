@@ -1,17 +1,31 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { MenuNavDesktop, MenuNavMobile } from "./components";
+import Transition from "./transition";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+
+const bebasNeue = localFont({
+  src: "./fonts/BebasNeue-Regular.ttf",
+  variable: '--font-bebas-neue',
+  weight: "400",
+  display: 'swap',
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const robotoMono = localFont({
+  src: "./fonts/RobotoMono-VariableFont_wght.ttf",
+  variable: '--font-roboto-mono',
+  weight: "400",
+  display: 'swap',
 });
+
+const inter = localFont({
+  src: "./fonts/Inter-VariableFont_opsz,wght.ttf",
+  variable: '--font-inter',
+  weight: "400",
+  display: 'swap',
+});
+ 
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,12 +37,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" className={`${inter.variable} ${robotoMono.variable} ${bebasNeue.variable}`}>
+      <body className={`antialiased  bg-hero-pattern bg-no-repeat bg-center `}>
+        <Transition>{children}</Transition>
+        <div className="hidden sm:block">
+          <MenuNavDesktop />
+        </div>
+        <div className="block sm:hidden">
+          <MenuNavMobile />
+        </div>
       </body>
     </html>
   );
