@@ -7,14 +7,14 @@ import { IconBoundingBox, IconCodeSlash, IconDevicesPhone, IconWordpress } from 
 export default function AboutPage() {
   return (
     <motion.div 
-      className='container m-auto'
+      className="container m-auto"
       animate={{ opacity: 1 }} 
       initial={{ opacity: 0 }}>
 
       <Title text="About Me" />
 
-      <p className='font-[family-name:var(--font-inter)] font-normal mb-4'>
-        <strong className='font-bold mb-1 block tracking-wide'>Hello! I’m Johan Ricardo.</strong>
+      <p className="font-[family-name:var(--font-inter)] font-normal mb-4">
+        <strong className="font-bold mb-1 block tracking-wide">Hello! I'm Johan Ricardo.</strong>
         A web designer and developer focused on creating outstanding user experiences. With a background in graphic design and coding skills, I'm here to turn your web visions into reality. Let's chat!
       </p>
       <h3 className="text-md font-semibold tracking-wide text-black mb-4">Is there anything I can do for you?</h3>
@@ -47,7 +47,7 @@ export default function AboutPage() {
               width={30}
               height={30}
               alt="HTML 5"
-              loading='lazy'
+              loading="lazy"
               className='w-6 h-6 md:w-8 md:h-8'
             />
             <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">HTML 5</h3>
@@ -58,7 +58,7 @@ export default function AboutPage() {
               width={30}
               height={30}
               alt="CSS 3"
-              loading='lazy'
+              loading="lazy"
               className='w-6 h-6 md:w-8 md:h-8'
             />
             <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">CSS 3</h3>
@@ -69,7 +69,7 @@ export default function AboutPage() {
               width={30}
               height={30}
               alt="Javascript"
-              loading='lazy'
+              loading="lazy"
               className='w-6 h-6 md:w-8 md:h-8'
             />
             <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">Javascript</h3>
@@ -80,7 +80,7 @@ export default function AboutPage() {
               width={30}
               height={30}
               alt="Typescript"
-              loading='lazy'
+              loading="lazy"
               className='w-6 h-6 md:w-8 md:h-8'
             />
             <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">Javascript</h3>
@@ -91,7 +91,7 @@ export default function AboutPage() {
               width={30}
               height={30}
               alt="Sass"
-              loading='lazy'
+              loading="lazy"
               className='w-6 h-6 md:w-8 md:h-8'
             />
             <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">Sass</h3>
@@ -102,7 +102,7 @@ export default function AboutPage() {
               width={30}
               height={30}
               alt="TailwindCss"
-              loading='lazy'
+              loading="lazy"
               className='w-6 h-6 md:w-8 md:h-8'
             />
             <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">TailwindCss</h3>
@@ -113,7 +113,7 @@ export default function AboutPage() {
               width={30}
               height={30}
               alt="Webpack 5"
-              loading='lazy'
+              loading="lazy"
               className='w-6 h-6 md:w-8 md:h-8'
             />
             <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">Webpack 5</h3>
@@ -124,7 +124,7 @@ export default function AboutPage() {
               width={30}
               height={30}
               alt="React JS"
-              loading='lazy'
+              loading="lazy"
               className='w-6 h-6 md:w-8 md:h-8'
             />
             <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">React JS</h3>
@@ -135,7 +135,7 @@ export default function AboutPage() {
               width={30}
               height={30}
               alt="Next JS"
-              loading='lazy'
+              loading="lazy"
               className='w-6 h-6 md:w-8 md:h-8'
             />
             <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">Next JS</h3>
@@ -146,7 +146,7 @@ export default function AboutPage() {
               width={30}
               height={30}
               alt="Figma"
-              loading='lazy'
+              loading="lazy"
               className='w-6 h-6 md:w-8 md:h-8'
             />
             <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">Figma</h3>
@@ -157,7 +157,7 @@ export default function AboutPage() {
               width={30}
               height={30}
               alt="Wordpress"
-              loading='lazy'
+              loading="lazy"
               className='w-6 h-6 md:w-8 md:h-8'
             />
             <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">Wordpress</h3>
@@ -168,7 +168,7 @@ export default function AboutPage() {
               width={30}
               height={30}
               alt="Git"
-              loading='lazy'
+              loading="lazy"
               className='w-6 h-6 md:w-8 md:h-8'
             />
             <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">Git</h3>
