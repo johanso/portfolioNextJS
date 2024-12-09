@@ -4,7 +4,7 @@ import { IconContactPlane, IconFaceSmile, IconIdentification, IconISqueresPlus }
 export const MenuNavMobile = () => {
 
   return (
-    <nav className="fixed w-11/12 left-0 right-0 bottom-4 m-auto">
+    <nav className="fixed w-11/12 left-0 right-0 bottom-0 m-auto bg-white">
       <ul className="flex justify-center gap-12">
         <li className="text-left [&>a]:text-gray-500 [&>a]:flex [&>a]:flex-col [&>a]:items-center">
           <Link href="/about">
