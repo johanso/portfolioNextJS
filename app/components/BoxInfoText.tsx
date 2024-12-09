@@ -14,7 +14,7 @@ export const BoxInfoText = ({title, icon, text} : BoxInfoTextProps) => {
         <h3 className="ml-4 text-base font-semibold text-black lg:text-base">{title}</h3>
       </div>
       <div className="mt-3">
-        <p className="text-xs font-medium text-black md:text-sm">{text}</p>
+        <p className="text-sm font-medium text-black md:text-sm">{text}</p>
       </div>
     </div>
   )
