@@ -6,36 +6,36 @@ import { IconBoundingBox, IconCodeSlash, IconDevicesPhone, IconWordpress } from 
 
 export default function AboutPage() {
   return (
-    <motion.div 
+    <motion.div
       className="container m-auto"
-      animate={{ opacity: 1 }} 
+      animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}>
 
       <Title text="About Me" />
 
       <p className="font-[family-name:var(--font-inter)] font-normal mb-4">
         <strong className="font-bold mb-1 block tracking-wide">Hello! I&apos;m Johan Ricardo.</strong>
-        A web designer and developer focused on creating outstanding user experiences. With a background in graphic design and coding skills, I'm here to turn your web visions into reality. Let's chat!
+        A web designer and developer focused on creating outstanding user experiences. With a background in graphic design and coding skills, I&apos;m here to turn your web visions into reality. Let's chat!
       </p>
       <h3 className="text-md font-semibold tracking-wide text-black mb-4">Is there anything I can do for you?</h3>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-        <BoxInfoText 
-          title="UI Design" 
+        <BoxInfoText
+          title="UI Design"
           icon={<IconBoundingBox size={28} />}
-          text="Design are at the heart of my work. I'm passionate about creating interfaces that are both aesthetically pleasing and highly functional."   />
-        <BoxInfoText 
-          title="Frontend Development" 
+          text="Design are at the heart of my work. I&apos;m passionate about creating interfaces that are both aesthetically pleasing and highly functional." />
+        <BoxInfoText
+          title="Frontend Development"
           icon={<IconCodeSlash size={28} />}
-          text="I specialize in crafting engaging user interfaces. From design concepts to coding with HTML, CSS, JavaScript and frameworks."  />
-        <BoxInfoText 
-          title="Responsive Design" 
+          text="I specialize in crafting engaging user interfaces. From design concepts to coding with HTML, CSS, JavaScript and frameworks." />
+        <BoxInfoText
+          title="Responsive Design"
           icon={<IconDevicesPhone size={28} />}
-          text="Develop a good Frontend design for mobile, tablet, desktop and all screen devices"  />
-        <BoxInfoText 
-          title="WordPress Development" 
+          text="Develop a good Frontend design for mobile, tablet, desktop and all screen devices" />
+        <BoxInfoText
+          title="WordPress Development"
           icon={<IconWordpress size={28} />}
-          text="WordPress is my playground when it comes to web development. I excel in customizing, optimizing, and extending WordPress websites."  />
+          text="WordPress is my playground when it comes to web development. I excel in customizing, optimizing, and extending WordPress websites." />
       </div>
 
       <div className="grid grid-cols-1 gap-4 mt-10">
@@ -108,7 +108,7 @@ export default function AboutPage() {
             <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">TailwindCss</h3>
           </div>
           <div className="flex items-center px-3 py-3 border rounded-lg bg-white border-light-gray">
-            <Image 
+            <Image
               src="/images/skill-webpack.svg"
               width={30}
               height={30}
