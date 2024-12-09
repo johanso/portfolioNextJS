@@ -11,7 +11,7 @@ import {
 export default function AboutPage() {
   return (
     <motion.div
-      className="container m-auto"
+      className="container m-auto py-4"
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
     >

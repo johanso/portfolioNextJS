@@ -40,7 +40,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${inter.variable} ${robotoMono.variable} ${bebasNeue.variable}`}>
-      <body className={`antialiased  bg-hero-pattern bg-no-repeat bg-center `}>
+      <body className={`antialiased  bg-hero-pattern bg-no-repeat bg-center min-h-svh`}>
         <Transition>{children}</Transition>
         <div className="hidden sm:block">
           <MenuNavDesktop />
