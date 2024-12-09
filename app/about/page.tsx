@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { BoxInfoText, SkillCard, Title } from "../components";
 import {
   IconBoundingBox,
