@@ -5,3 +5,4 @@ export * from "./Title";
 export * from "./MenuNavMobile";
 export * from "./MenuNavDesktop";
 export * from "./BoxInfoText";
+export * from "./SkillCard";

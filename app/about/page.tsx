@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { BoxInfoText, Title } from "../components";
+import { BoxInfoText, SkillCard, Title } from "../components";
 import {
   IconBoundingBox,
   IconCodeSlash,
@@ -58,162 +58,67 @@ export default function AboutPage() {
           Skill&apos;s &amp;<span className="text-primary"> Technology</span>
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 lg:grid-cols-4">
-          <div className="flex items-center px-3 py-3 border rounded-lg bg-white border-light-gray">
-            <Image
-              src="/images/skill-html5.svg"
-              width={30}
-              height={30}
-              alt="HTML 5"
-              loading="lazy"
-              className="w-6 h-6 md:w-8 md:h-8"
-            />
-            <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">
-              HTML 5
-            </h3>
-          </div>
-          <div className="flex items-center px-3 py-3 border rounded-lg bg-white border-light-gray">
-            <Image
-              src="/images/skill-css3.svg"
-              width={30}
-              height={30}
-              alt="CSS 3"
-              loading="lazy"
-              className="w-6 h-6 md:w-8 md:h-8"
-            />
-            <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">
-              CSS 3
-            </h3>
-          </div>
-          <div className="flex items-center px-3 py-3 border rounded-lg bg-white border-light-gray">
-            <Image
-              src="/images/skill-javascript.svg"
-              width={30}
-              height={30}
-              alt="Javascript"
-              loading="lazy"
-              className="w-6 h-6 md:w-8 md:h-8"
-            />
-            <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">
-              Javascript
-            </h3>
-          </div>
-          <div className="flex items-center px-3 py-3 border rounded-lg bg-white border-light-gray">
-            <Image
-              src="/images/skill-typescript.svg"
-              width={30}
-              height={30}
-              alt="Typescript"
-              loading="lazy"
-              className="w-6 h-6 md:w-8 md:h-8"
-            />
-            <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">
-              Javascript
-            </h3>
-          </div>
-          <div className="flex items-center px-3 py-3 border rounded-lg bg-white border-light-gray">
-            <Image
-              src="/images/skill-sass.svg"
-              width={30}
-              height={30}
-              alt="Sass"
-              loading="lazy"
-              className="w-6 h-6 md:w-8 md:h-8"
-            />
-            <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">
-              Sass
-            </h3>
-          </div>
-          <div className="flex items-center px-3 py-3 border rounded-lg bg-white border-light-gray">
-            <Image
-              src="/images/skill-tailwindcss.svg"
-              width={30}
-              height={30}
-              alt="TailwindCss"
-              loading="lazy"
-              className="w-6 h-6 md:w-8 md:h-8"
-            />
-            <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">
-              TailwindCss
-            </h3>
-          </div>
-          <div className="flex items-center px-3 py-3 border rounded-lg bg-white border-light-gray">
-            <Image
-              src="/images/skill-webpack.svg"
-              width={30}
-              height={30}
-              alt="Webpack 5"
-              loading="lazy"
-              className="w-6 h-6 md:w-8 md:h-8"
-            />
-            <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">
-              Webpack 5
-            </h3>
-          </div>
-          <div className="flex items-center px-3 py-3 border rounded-lg bg-white border-light-gray">
-            <Image
-              src="/images/skill-reactjs.svg"
-              width={30}
-              height={30}
-              alt="React JS"
-              loading="lazy"
-              className="w-6 h-6 md:w-8 md:h-8"
-            />
-            <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">
-              React JS
-            </h3>
-          </div>
-          <div className="flex items-center px-3 py-3 border rounded-lg bg-white border-light-gray">
-            <Image
-              src="/images/skill-nextjs.svg"
-              width={30}
-              height={30}
-              alt="Next JS"
-              loading="lazy"
-              className="w-6 h-6 md:w-8 md:h-8"
-            />
-            <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">
-              Next JS
-            </h3>
-          </div>
-          <div className="flex items-center px-3 py-3 border rounded-lg bg-white border-light-gray">
-            <Image
-              src="/images/skill-figma.svg"
-              width={30}
-              height={30}
-              alt="Figma"
-              loading="lazy"
-              className="w-6 h-6 md:w-8 md:h-8"
-            />
-            <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">
-              Figma
-            </h3>
-          </div>
-          <div className="flex items-center px-3 py-3 border rounded-lg bg-white border-light-gray">
-            <Image
-              src="/images/skill-wordpress.svg"
-              width={30}
-              height={30}
-              alt="Wordpress"
-              loading="lazy"
-              className="w-6 h-6 md:w-8 md:h-8"
-            />
-            <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">
-              Wordpress
-            </h3>
-          </div>
-          <div className="flex items-center px-3 py-3 border rounded-lg bg-white border-light-gray">
-            <Image
-              src="/images/skill-git.svg"
-              width={30}
-              height={30}
-              alt="Git"
-              loading="lazy"
-              className="w-6 h-6 md:w-8 md:h-8"
-            />
-            <h3 className="ml-2 text-xs font-medium text-black md:text-sm md:ml-3">
-              Git
-            </h3>
-          </div>
+          <SkillCard 
+            imageSrc="/images/skill-html5.svg"
+            skillName="HTML 5"
+            imageAlt="HTML 5 Logo"
+          />
+          <SkillCard 
+            imageSrc="/images/skill-css3.svg"
+            skillName="CSS 3"
+            imageAlt="CSS 3 Logo"
+          />
+          <SkillCard 
+            imageSrc="/images/skill-javascript.svg"
+            skillName="Javascript"
+            imageAlt="Javascript Logo"
+          />
+          <SkillCard 
+            imageSrc="/images/skill-typescript.svg"
+            skillName="Typescript"
+            imageAlt="Typescript Logo"
+          />
+          <SkillCard 
+            imageSrc="/images/skill-sass.svg"
+            skillName="Sass"
+            imageAlt="Sass Logo"
+          />
+          <SkillCard 
+            imageSrc="/images/skill-tailwindcss.svg"
+            skillName="Tailwind"
+            imageAlt="Tailwind Logo"
+          />
+          <SkillCard 
+            imageSrc="/images/skill-webpack.svg"
+            skillName="Webpack 5"
+            imageAlt="Webpack 5 Logo"
+          />
+          <SkillCard 
+            imageSrc="/images/skill-reactjs.svg"
+            skillName="React JS"
+            imageAlt="React JS Logo"
+          />
+          <SkillCard 
+            imageSrc="/images/skill-nextjs.svg"
+            skillName="Next JS"
+            imageAlt="Next JS Logo"
+          />
+          <SkillCard 
+            imageSrc="/images/skill-figma.svg"
+            skillName="Figma"
+            imageAlt="Figma Logo"
+          />
+          <SkillCard 
+            imageSrc="/images/skill-wordpress.svg"
+            skillName="Wordpress"
+            imageAlt="Wordpress Logo"
+          />
+          <SkillCard 
+            imageSrc="/images/skill-git.svg"
+            skillName="Git"
+            imageAlt="Git Logo"
+          />
+
         </div>
       </div>
     </motion.div>
