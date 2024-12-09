@@ -24,7 +24,7 @@ export default function AboutPage() {
         </strong>
         A web designer and developer focused on creating outstanding user
         experiences. With a background in graphic design and coding skills,
-        I&apos;m here to turn your web visions into reality. Let's chat!
+        I&apos;m here to turn your web visions into reality. Let&apos;s chat!
       </p>
       <h3 className="text-md font-semibold tracking-wide text-black mb-4">
         Is there anything I can do for you?
@@ -34,7 +34,7 @@ export default function AboutPage() {
         <BoxInfoText
           title="UI Design"
           icon={<IconBoundingBox size={28} />}
-          text="Design are at the heart of my work. I'm passionate about creating interfaces that are both aesthetically pleasing and highly functional."
+          text="Design are at the heart of my work. I&apos;m passionate about creating interfaces that are both aesthetically pleasing and highly functional."
         />
         <BoxInfoText
           title="Frontend Development"
