@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { MenuNavDesktop, MenuNavMobile } from "./components";
+import { MenuNavDesktop } from "./components";
 import Transition from "./transition";
 
 
@@ -43,10 +43,6 @@ export default function RootLayout({
       <body className={`antialiased  bg-hero-pattern bg-no-repeat bg-center h-screen`}>
         <MenuNavDesktop />
         <Transition>{children}</Transition>
-        
-        {/* <div className="block sm:hidden">
-          <MenuNavMobile />
-        </div> */}
       </body>
     </html>
   );
