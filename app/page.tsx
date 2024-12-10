@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <motion.div  className="grid" animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
+    <motion.div  
+      className="grid bg-hero-pattern bg-no-repeat bg-center h-svh" 
+      animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
       <Hero />
-      <main className="flex flex-col gap-8 sm:items-start">
-      </main>
     </motion.div>
   );
 }

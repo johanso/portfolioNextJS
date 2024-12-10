@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { MenuNavDesktop } from "./components";
+import { Navigation } from "./components";
 import Transition from "./transition";
 
 
@@ -40,10 +40,17 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${inter.variable} ${robotoMono.variable} ${bebasNeue.variable}`}>
-      <body className={`antialiased  bg-hero-pattern bg-no-repeat bg-center h-svh`}>
-        <MenuNavDesktop />
+      <body className="antialiased">
+        <Navigation />
         <Transition>{children}</Transition>
       </body>
     </html>
+
+    // <html lang="en" className={`${inter.variable} ${robotoMono.variable} ${bebasNeue.variable}`}>
+    //   <body className={`antialiased  bg-hero-pattern bg-no-repeat bg-center h-svh`}>
+    //     <Navigation />
+    //     <Transition>{children}</Transition>
+    //   </body>
+    // </html>
   );
 }
