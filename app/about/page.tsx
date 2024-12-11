@@ -25,11 +25,12 @@ export default function AboutPage() {
         experiences. With a background in graphic design and coding skills,
         I&apos;m here to turn your web visions into reality. Let&apos;s chat!
       </p>
+      
       <h3 className="text-md font-semibold tracking-wide text-black mb-4">
         Is there anything I can do for you?
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
         <BoxInfoText
           title="UI Design"
           icon={<IconBoundingBox size={28} />}
@@ -52,7 +53,7 @@ export default function AboutPage() {
         />
       </div>
 
-      <div className="grid grid-cols-1 gap-4 mt-10">
+      <div className="grid grid-cols-1 gap-4 mb-6">
         <h2 className="text-xl lg:text-2xl font-bold mb-4 text-center">
           Skill&apos;s &amp;<span className="text-primary"> Technology</span>
         </h2>
