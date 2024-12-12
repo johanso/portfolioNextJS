@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import { usePathname } from 'next/navigation';
-import { IconContactPlane, IconFaceSmile, IconIdentification, IconISqueresPlus } from "../icons"
+import { IconContactPlane, IconFaceSmile, IconIdentification, IconISqueresPlus, IconHome } from "../icons"
 
 interface MenuItem {
   href: string;
@@ -10,6 +10,11 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
+  {
+    href: '/',
+    label: 'Home',
+    icon: <IconHome size={22} />
+  },
   {
     href: '/about',
     label: 'About',
@@ -50,7 +55,7 @@ export const Navigation = () => {
       </ul>
 
       {/* Menu Mobile - se muestra en móvil, se oculta en md y superior */}
-      <ul className="flex md:hidden justify-center gap-12">
+      <ul className="flex md:hidden justify-center gap-8">
         {menuItems.map((item) => (
           <li key={item.label} className="text-left [&>a]:flex [&>a]:flex-col [&>a]:items-center">
             <Link href={item.href} className={`${pathname === item.href ? 'text-primary font-semibold' : 'text-gray-500'}`}>
