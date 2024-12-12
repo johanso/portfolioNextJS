@@ -45,12 +45,5 @@ export default function RootLayout({
         <Transition>{children}</Transition>
       </body>
     </html>
-
-    // <html lang="en" className={`${inter.variable} ${robotoMono.variable} ${bebasNeue.variable}`}>
-    //   <body className={`antialiased  bg-hero-pattern bg-no-repeat bg-center h-svh`}>
-    //     <Navigation />
-    //     <Transition>{children}</Transition>
-    //   </body>
-    // </html>
   );
 }

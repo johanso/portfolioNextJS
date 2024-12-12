@@ -1,5 +1,4 @@
-import React from 'react'
-
+'use client';
 export const Title = ({text}: {text: string}) => {
 
   const words = text?.split(' ') || [];

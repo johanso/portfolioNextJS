@@ -31,7 +31,7 @@ const menuItems: MenuItem[] = [
     icon: <IconISqueresPlus size={22} />
   },
   {
-    href: '/#',
+    href: '/contact',
     label: 'Contact',
     icon: <IconContactPlane size={22} />
   }

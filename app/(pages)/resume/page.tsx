@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { BoxInfoText, Title } from "../components";
+import { BoxInfoText, Title } from "../../components";
 
 export default function ResumePage() {
   return (
@@ -81,24 +81,28 @@ export default function ResumePage() {
           <BoxInfoText
             title="Meta"
             subtitle="Online"
+            url="https://www.coursera.org/account/accomplishments/specialization/certificate/X3LWV5G4C5MT"
             years="2023"
             text="Meta Front-End Developer"
           />
           <BoxInfoText
             title="Google"
             years="2021"
+            url="https://www.coursera.org/account/accomplishments/verify/JAY6JM3ECCNN"
             subtitle="Online"
             text="Foundations of User Experience (UX) Design"
           />
           <BoxInfoText
             title="Google Actívate"
             years="2019"
+            url="https://learndigital.withgoogle.com/activate/validate-certificate-code"
             subtitle="Online"
             text="Desarrollo Web I, II"
           />
           <BoxInfoText
             title="IBM"
             years="2019"
+            url="https://www.youracclaim.com/badges/b07839ab-c9af-46a2-873e-d061acef007e/linked_in_profile"
             subtitle="Online"
             text="Enterprise Design Thinking Practitioner"
           />

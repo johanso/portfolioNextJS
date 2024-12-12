@@ -1,12 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
-import { BoxInfoText, SkillCard, Title } from "../components";
+import { BoxInfoText, SkillCard, Title } from "../../components";
 import {
   IconBoundingBox,
   IconCodeSlash,
   IconDevicesPhone,
   IconWordpress,
-} from "../icons";
+} from "../../icons";
 
 export default function AboutPage() {
   return (
@@ -17,7 +17,7 @@ export default function AboutPage() {
     >
       <Title text="About Me" />
 
-      <p className="font-[family-name:var(--font-inter)] font-normal mb-4">
+      <p className="font-[family-name:var(--font-inter)] font-normal mb-6">
         <strong className="font-bold mb-1 block tracking-wide">
           Hello! I&apos;m Johan Ricardo.
         </strong>
@@ -25,8 +25,8 @@ export default function AboutPage() {
         experiences. With a background in graphic design and coding skills,
         I&apos;m here to turn your web visions into reality. Let&apos;s chat!
       </p>
-      
-      <h3 className="text-md font-semibold tracking-wide text-black mb-4">
+
+      <h3 className="text-md font-semibold tracking-wide text-black mb-6">
         Is there anything I can do for you?
       </h3>
 
