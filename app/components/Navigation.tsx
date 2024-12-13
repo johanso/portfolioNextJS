@@ -26,7 +26,7 @@ const menuItems: MenuItem[] = [
     icon: <IconIdentification size={22} />
   },
   {
-    href: '/#',
+    href: '/works',
     label: 'Works',
     icon: <IconISqueresPlus size={22} />
   },
