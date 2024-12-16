@@ -42,7 +42,7 @@ export const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed w-full left-0 right-0 top-0 py-4 m-auto bg-white shadow-sm">
+    <nav className="fixed w-full left-0 right-0 top-0 py-4 m-auto bg-white shadow-sm z-10">
       {/* Menu Desktop - se muestra en md y superior, se oculta en móvil */}
       <ul className="hidden md:flex justify-center gap-20">
         {menuItems.map((item) => (

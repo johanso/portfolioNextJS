@@ -3,17 +3,18 @@ import { ReactNode } from 'react'
 import { IconLink } from '../icons';
 
 interface BoxInfoTextProps {
-  title: string;
+  title?: string;
   subtitle?: string;
   icon?: ReactNode;
   years?: string
   url?: string
   text: string
+  custonClass?: string
 }
 
-export const BoxInfoText = ({title, icon, text, years, subtitle, url} : BoxInfoTextProps) => {
+export const BoxInfoText = ({title, icon, text, years, subtitle, url, custonClass} : BoxInfoTextProps) => {
   return (
-    <div className="p-6 rounded-lg bg-white border-solid border-2 border-black">
+    <div className={`p-6 rounded-lg bg-white border-solid border-2 border-black relative ${custonClass === 'timeline' ? "[&:not(:last-child)]:after:content-[''] [&:not(:last-child)]:after:absolute [&:not(:last-child)]:after:bottom-[-0.95rem] [&:not(:last-child)]:after:h-[0.95rem] [&:not(:last-child)]:after:w-[2px] [&:not(:last-child)]:after:bg-black [&:not(:last-child)]:after:left-1/2 [&:not(:last-child)]:after:-translate-x-1/2" : ''}`}>
       <div className={`flex flex-wrap gap-x-4 ${subtitle ? 'flex-col' : 'items-center'}`}>
         { icon && <span>{icon}</span> }
         <div className="flex items-center">

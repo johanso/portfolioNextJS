@@ -7,3 +7,4 @@ export * from "./Navigation";
 export * from "./BoxInfoText";
 export * from "./SkillCard";
 export * from "./Tabs";
+export * from "./ProjectSection";

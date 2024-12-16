@@ -1,18 +1,7 @@
 "use client";
 import React, { useState } from 'react';
+import { TabsProps } from '../interfaces/components/tabs';
 
-interface Tab {
-  id: string;
-  label: string;
-  content: React.ReactNode;
-  icon?: React.ReactNode;
-}
-
-interface TabsProps {
-  tabs: Tab[];
-  defaultTab?: string;
-  className?: string;
-}
 
 export const Tabs = ({ 
   tabs, defaultTab, className = ''
@@ -40,9 +29,8 @@ export const Tabs = ({
         ))}
       </div>
 
-      <div className="p-4">
-        {tabs.find((tab) => tab.id === activeTab)?.content}
-      </div>
+      {tabs.find((tab) => tab.id === activeTab)?.content}
+      
     </div>
   );
 };
