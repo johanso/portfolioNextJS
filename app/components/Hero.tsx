@@ -1,7 +1,6 @@
 import React from 'react'
 import { Button } from './Button'
-import { heroData } from '../data/Hero'
-
+import { heroData } from '../data/hero'
 
 export const Hero = () => {
   return (
