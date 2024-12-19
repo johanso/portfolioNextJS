@@ -48,7 +48,7 @@ export const Tabs = ({
           <section className="grid grid-cols-1 gap-x-4 gap-y-6 mt-8">
             <div className="mt-4">
               <div className='flex justify-center mb-8 opacity-20'><IconInfo size={60} /></div>
-              <p className="text-center max-w-3xl mx-auto">Due to confidentiality agreements, I am unable to showcase my professional projects here. However, if you're interested, feel free to contact me, and Ill gladly share my professional portfolio with you.</p>
+              <p className="text-center max-w-3xl mx-auto">Due to confidentiality agreements, I am unable to showcase my professional projects here. However, if you&apos;re interested, feel free to contact me, and I&apos;ll gladly share my professional portfolio with you.</p>
             </div>
           </section>
         )
