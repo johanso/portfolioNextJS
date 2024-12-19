@@ -9,7 +9,7 @@ export const ProjectSection = ({ type }: ProjectSectionProps) => {
   const filteredProjects = worksData.projects.filter(project => project.type === type);
 
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6 mt-8">
+    <>
       {filteredProjects.map(project => (
         <article 
           key={project.id} 
@@ -74,6 +74,6 @@ export const ProjectSection = ({ type }: ProjectSectionProps) => {
           </div>
         </article>
       ))}
-    </section>
+    </>
   );
 };

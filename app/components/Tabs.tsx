@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { TabsProps } from '../interfaces/components/tabs';
+import { IconInfo } from '../icons';
 
 
 export const Tabs = ({ 
@@ -8,10 +9,16 @@ export const Tabs = ({
 }: TabsProps) => {
   const [activeTab, setActiveTab] = useState(defaultTab || tabs[0]?.id);
 
+  const tabContent = tabs.find((tab) => tab.id === activeTab)?.content
+
+  const isEmpty = (tabContent: any) => {
+    return Object.keys(tabContent).length === 0
+  }
+
   return (
     <div className={`${className}`}>
 
-      <div className="flex justify-start rounded-lg bg-neutral-50 p-2">
+      <div className="flex flex-col md:flex-row justify-start rounded-lg bg-neutral-50 p-2">
         {tabs.map((tab) => (
           <button
             key={tab.id}
@@ -23,13 +30,30 @@ export const Tabs = ({
               }
             `}
           >
-            {tab.icon && <span className='hidden lg:inline'>{tab.icon}</span>}
+            {tab.icon && <span className='inline'>{tab.icon}</span>}
             {tab.label}
           </button>
         ))}
       </div>
 
-      {tabs.find((tab) => tab.id === activeTab)?.content}
+      {
+        !isEmpty(tabContent)
+        ? (
+          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6 mt-8">
+            <div className="mt-4">
+              {tabs.find((tab) => tab.id === activeTab)?.content}
+            </div>
+          </section>
+        ) : (
+          <section className="grid grid-cols-1 gap-x-4 gap-y-6 mt-8">
+            <div className="mt-4">
+              <div className='flex justify-center mb-8 opacity-20'><IconInfo size={60} /></div>
+              <p className="text-center max-w-3xl mx-auto">Due to confidentiality agreements, I am unable to showcase my professional projects here. However, if you're interested, feel free to contact me, and Ill gladly share my professional portfolio with you.</p>
+            </div>
+          </section>
+        )
+
+      }
       
     </div>
   );

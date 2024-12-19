@@ -24,7 +24,7 @@ export default function WorksPage() {
   }));
 
   return (
-    <section className="container m-auto pt-24 pb-4">
+    <section className="container m-auto pt-24 pb-4 mt-0">
       <Title text={worksData.title} />
 
       <p className="font-[family-name:var(--font-inter)] font-normal mb-12">

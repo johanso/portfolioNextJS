@@ -11,36 +11,36 @@ export const resumeData: ResumeContent = {
       items: [
         {
           title: "Million and Up",
-          subtitle: "[Senior UI Designer / Dev]",
-          years: "2021 - Present",
+          subtitle: "Senior UI Designer / Dev",
+          years: "(2021 - Present)",
           text: "Led website development and CRM maintenance using React and TypeScript. Designed and implemented essential UI components that enhanced functionality and user experience.",
           custonClass: "timeline"
         },
         {
           title: "Exsis Digital Angels",
-          subtitle: "[Frontend UI]",
-          years: "2020 - 2021",
+          subtitle: "Frontend UI",
+          years: "(2020 - 2021)",
           text: "Developed interactive UI components with React and TypeScript, focusing on high-quality design and seamless functionality.",
           custonClass: "timeline"
         },
         {
           title: "Soluciones Bolívar",
-          subtitle: "[Frontend UI Dev]",
-          years: "2019 - 2020",
+          subtitle: "Frontend UI Dev",
+          years: "(2019 - 2020)",
           text: "Created pixel-perfect web interfaces while collaborating closely with developers to ensure consistency and responsiveness.",
           custonClass: "timeline"
         },
         {
           title: "Grupo CINTE",
-          subtitle: "[Frontend UI Dev]",
-          years: "2018 - 2019",
+          subtitle: "Frontend UI Dev",
+          years: "(2018 - 2019)",
           text: "Improved UI/UX with user-friendly navigation, clean layouts, and fully responsive designs.",
           custonClass: "timeline"
         },
         {
           title: "E-solutions",
-          subtitle: "[UI/UX Frontend Dev]",
-          years: "2013 - 2018",
+          subtitle: "UI/UX Frontend Dev",
+          years: "(2013 - 2018)",
           text: "Designed and implemented visually appealing, responsive web interfaces, contributing to cross-functional teams to deliver exceptional user experiences.",
           custonClass: "timeline"
         }
