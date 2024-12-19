@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { ReactNode, useState } from 'react';
 import { TabsProps } from '../interfaces/components/tabs';
 import { IconInfo } from '../icons';
 
@@ -11,8 +11,10 @@ export const Tabs = ({
 
   const tabContent = tabs.find((tab) => tab.id === activeTab)?.content
 
-  const isEmpty = (tabContent: any) => {
-    return Object.keys(tabContent).length === 0
+  const isEmpty = (tabContent: ReactNode): boolean => {
+    if (tabContent === null || tabContent === undefined) return true;
+    if (typeof tabContent === 'object' && Object.keys(tabContent as object).length === 0) return true;
+    return false;
   }
 
   return (
