@@ -14,7 +14,7 @@ interface BoxInfoTextProps {
 
 export const BoxInfoText = ({title, icon, text, years, subtitle, url, custonClass} : BoxInfoTextProps) => {
   return (
-    <div className={`p-6 rounded-lg bg-white border-solid border-2 border-black relative ${custonClass === 'timeline' ? "[&:not(:last-child)]:after:content-[''] [&:not(:last-child)]:after:absolute [&:not(:last-child)]:after:bottom-[-0.95rem] [&:not(:last-child)]:after:h-[0.95rem] [&:not(:last-child)]:after:w-[2px] [&:not(:last-child)]:after:bg-black [&:not(:last-child)]:after:left-1/2 [&:not(:last-child)]:after:-translate-x-1/2" : ''}`}>
+    <div className={`py-4 px-6 rounded-lg bg-white border-solid border-2 border-black relative ${custonClass === 'timeline' ? "[&:not(:last-child)]:after:content-[''] [&:not(:last-child)]:after:absolute [&:not(:last-child)]:after:bottom-[-0.95rem] [&:not(:last-child)]:after:h-[0.95rem] [&:not(:last-child)]:after:w-[2px] [&:not(:last-child)]:after:bg-black [&:not(:last-child)]:after:left-1/2 [&:not(:last-child)]:after:-translate-x-1/2" : ''}`}>
       <div className={`flex flex-wrap gap-x-4 ${subtitle ? 'flex-col' : 'items-center'}`}>
         { icon && <span>{icon}</span> }
         <div className="flex items-center">
@@ -34,7 +34,7 @@ export const BoxInfoText = ({title, icon, text, years, subtitle, url, custonClas
           </div>
         )}
       </div>
-      <div className="mt-3">
+      <div className="mt-1">
         <p className="text-sm font-medium text-neutral-500 md:text-sm">{text}</p>
       </div>
     </div>

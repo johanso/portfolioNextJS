@@ -72,6 +72,14 @@ export const resumeData: ResumeContent = {
       title: "Certifications",
       items: [
         {
+          title: "JavaScript Foundations Professional Certificate by Mozilla",
+          subtitle: "Online",
+          url: "https://www.linkedin.com/learning/certificates/d7d53d86f818263fc6af15ce6973ab36c3a1899ec35ed87c1da7f862be4138f7?trk=share_certificate",
+          years: "(2024)",
+          text: "Mozilla / Linkedin",
+          custonClass: "timeline"
+        },
+        {
           title: "Meta Front-End Developer",
           subtitle: "Online",
           url: "https://www.coursera.org/account/accomplishments/specialization/certificate/X3LWV5G4C5MT",

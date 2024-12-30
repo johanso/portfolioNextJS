@@ -13,9 +13,9 @@ export const ProjectSection = ({ type }: ProjectSectionProps) => {
       {filteredProjects.map(project => (
         <article 
           key={project.id} 
-          className="bg-white border border-light-gray rounded-lg pt-6 text-center overflow-hidden"
+          className="bg-white border border-light-gray rounded-lg text-center overflow-hidden"
         >
-          <div className="mb-2">
+          <div className="my-2 mx-4">
             {project.demo ? (
               <Link 
                 href={project.demo}
@@ -27,24 +27,31 @@ export const ProjectSection = ({ type }: ProjectSectionProps) => {
                 </h3>
               </Link>
             ) : (
-              <h3 className="text-black text-base lg:text-xl font-semibold">
+              <h3 className="text-black text-base lg:text-lg font-semibold">
                 {project.title}
               </h3>
             )}
-            <p className="text-gray text-xs mb-2">
-              {project.technologies.join(", ")}
+            <p className="text-gray text-xs mb-1">
+              [ {project.technologies.join(", ")} ]
             </p>
             <p className="text-gray text-xs">
               {project.description}
             </p>
+            {
+              project.company && project.period && (
+              <p className="text-black text-sm font-medium mt-2">
+                {project.company} - {project.period}	
+              </p>
+              )
+            }
           </div>
 
-          <div className="shadow-xl relative h-[200px] group">
+          <div className={`shadow-xl relative h-[180px] ${(project.demo || project.github) ? 'group' : ''}`}>
             <Image 
               src={project.image}
               alt={project.title}
               fill
-              className="object-cover transition duration-300 transform translate-y-5 group-hover:translate-y-0"
+              className={`object-cover object-top transition duration-300 transform`}
               priority={false}
             />
             {(project.demo || project.github) && (

@@ -8,3 +8,4 @@ export * from "./BoxInfoText";
 export * from "./SkillCard";
 export * from "./Tabs";
 export * from "./ProjectSection";
+export * from "./ImageLightbox";
