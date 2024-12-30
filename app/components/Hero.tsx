@@ -1,11 +1,21 @@
 import React from 'react'
 import { heroData } from '../data/hero'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const Hero = () => {
   return (
     <div className='px-3'>
       <div className='p-8 flex flex-col items-center justify-center h-screen text-center'>
+        <div className="relative flex items-center justify-center mb-4 w-28 h-28">
+          <Image 
+            src={heroData.image} 
+            alt={heroData.name}
+            width={160}
+            height={160}
+            className="object-cover w-100 h-100 rounded-full"
+          />
+        </div>
         <h1 className="text-5xl mb-2 lg:text-6xl uppercase font-[family-name:var(--font-bebas-neue)]">
           {heroData.name}
         </h1>

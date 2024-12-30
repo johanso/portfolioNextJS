@@ -1,6 +1,6 @@
 import React from 'react';
 import { WorksContent } from '../interfaces/works';
-import { IconOneFill, IconThreeFill } from "../icons";
+import { IconOneFill, IconTwoFill } from "../icons";
 
 export const worksData: WorksContent = {
   title: "My Projects",
@@ -16,7 +16,7 @@ export const worksData: WorksContent = {
     {
       id: 'professional',
       label: 'Corporate Projects (Employee)',
-      icon: React.createElement(IconThreeFill, { size: 18 }),
+      icon: React.createElement(IconTwoFill, { size: 18 }),
       type: 'professional'
     }
   ],
