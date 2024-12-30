@@ -9,7 +9,7 @@ export const Tabs = ({ tabs, defaultTab, className = '' }: TabsProps) => {
   const [showPasswordModal, setShowPasswordModal] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [attemptedTab, setAttemptedTab] = useState<TabId | null>(null);
-  
+
   const tabContent = tabs.find((tab) => tab.id === activeTab)?.content;
 
   const isEmpty = (tabContent: ReactNode): boolean => {
@@ -27,7 +27,7 @@ export const Tabs = ({ tabs, defaultTab, className = '' }: TabsProps) => {
     }
   };
 
-  const handlePasswordSubmit = (password: string) => {
+  const handlePasswordSubmit = () => {
     setIsAuthenticated(true);
     setShowPasswordModal(false);
     if (attemptedTab) {

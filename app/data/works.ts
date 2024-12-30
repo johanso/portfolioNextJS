@@ -1,6 +1,6 @@
 import React from 'react';
 import { WorksContent } from '../interfaces/works';
-import { IconHome, IconOneFill, IconThreeFill, IconTwoFill } from "../icons";
+import { IconOneFill, IconThreeFill } from "../icons";
 
 export const worksData: WorksContent = {
   title: "My Projects",

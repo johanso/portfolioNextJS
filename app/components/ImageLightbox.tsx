@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Project } from '../interfaces/works';
-import { IconCloseLg, IconExpand, IconLink } from '../icons';
+import { IconCloseLg, IconExpand } from '../icons';
 
 interface LightboxProps {
   project: Project;
