@@ -15,14 +15,6 @@ export const PasswordModal = ({ onClose, onSubmit }: PasswordModalProps) => {
     e.preventDefault();
     const hashedInput = await hashPassword(password);
 
-    console.log('Hashed Input:', hashedInput); // Debug
-    console.log('Env Hash:', process.env.NEXT_PUBLIC_PROFESSIONAL_PASSWORD_HASH); // Debug
-
-    if (!process.env.NEXT_PUBLIC_PROFESSIONAL_PASSWORD_HASH) {
-      console.error('Password hash not configured');
-      return;
-    }
-
     if (hashedInput === process.env.NEXT_PUBLIC_PROFESSIONAL_PASSWORD_HASH) {
       onSubmit(password);
     } else {
