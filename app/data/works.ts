@@ -22,7 +22,7 @@ export const worksData: WorksContent = {
   ],
   projects: [
     {
-      id: "2",
+      id: "1",
       title: "Conceptos en Aluminio",
       description: "I built this website from scratch using Next.js and Tailwind CSS, focusing on responsive design and custom components.",
       technologies: ["Nextjs", "Tailwind"],
@@ -33,9 +33,9 @@ export const worksData: WorksContent = {
       period: "2023"
     },
     {
-      id: "1",
+      id: "2",
       title: "JS Codez",
-      description: "In this project, I created the theme from scratch for WordPress and developed custom post types for publishing articles and tutorials about JavaScript.",
+      description: "In this project, I created the theme from scratch using WordPress for publishing articles and tutorials about JavaScript.",
       technologies: ["WordPress", "PHP", "CSS", "JavaScript"],
       image: "https://res.cloudinary.com/dcplixyte/image/upload/v1735583187/porfolio/hqzoesslran93utyskmr.jpg",
       type: "personal",
@@ -43,9 +43,31 @@ export const worksData: WorksContent = {
       github: "https://github.com/johanso/jscodez",
       period: "2024"
     },
+    {
+      id: "3",
+      title: "X (Tweeter) Clone",
+      description: "Twitter/X clone built with Next.js 15, React 19, TypeScript, and Tailwind CSS. UI Features a responsive design.",
+      technologies: ["Nextjs", "TypeScript", "Tailwind CSS", "ImageKit"],
+      image: "https://res.cloudinary.com/dcplixyte/image/upload/v1736189129/porfolio/prj0echepureagdq4ghz.jpg",
+      type: "personal",
+      demo: "https://ui-clone-x.vercel.app/",
+      github: "https://github.com/johanso/ui-clone-x",
+      period: "2024"
+    },
 
 
 
+
+    {
+      id: "99222",
+      title: "57 Ocean Miami",
+      description: "Redesigned the website, developing reusable components and completing the front-end layout.",
+      technologies: ["Sass", "React", "Node.js"],
+      image: "https://res.cloudinary.com/dcplixyte/image/upload/v1735601877/porfolio/spf0hhbzzsfhpgyjbckh.jpg",
+      type: "professional",
+      company: "Million And Up",
+      period: "2023"
+    },
     {
       id: "202104",
       title: "Million And Up",
@@ -54,7 +76,7 @@ export const worksData: WorksContent = {
       image: "https://res.cloudinary.com/dcplixyte/image/upload/v1697817540/porfolio/million-web-1_hlmgqz.jpg",
       type: "professional",
       company: "Million And Up",
-      period: "2021"
+      period: "2022"
     },
     {
       id: "202103",
